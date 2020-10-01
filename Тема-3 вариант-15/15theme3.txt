@@ -7,8 +7,6 @@
 #include<stdio.h>
 #include<string>
 
-//using namespace std;
-
 int main() {
     int a1 = 0;
     int a2 = 0;
