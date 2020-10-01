@@ -1,0 +1,13 @@
+//15) Реализовать возведение в квадрат разности двух вещественных чисел.
+#include <iostream>
+
+int main() {
+    using namespace std;
+    double a, b, y;
+    cout << "Введите A и B" << endl;
+    cin >> a;
+    cin >> b;
+    y = a*a - 2*a*b + b*b;
+    cout << "Получилось = " << y;
+    return 0;
+}

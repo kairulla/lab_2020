@@ -1,0 +1,20 @@
+//15.3.2
+#include <iostream>
+#include <math.h>
+
+int main() {
+    using namespace std;
+    double a, c = 1, d;
+    cout << "Введите A " << endl << "A = ";
+    cin >> a;
+        for (int i = 1; i <= 3; i++) {
+                    for (int j = 1; j <= 3; j++) {
+                    d += j + i;
+                    }
+        c *= (a * a + i * i) / d;
+        d = 0;
+        }
+   
+    cout << "Y = " << c;
+    return 0;
+}

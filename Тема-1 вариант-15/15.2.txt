@@ -1,0 +1,26 @@
+//15.2
+#include <iostream>
+#include <math.h>
+
+int main() {
+    using namespace std;
+    double z1, z2, z3, x1, a, x2, c;
+        cout << "Введите X, для вычисления z1 = 1 - sin(x)" << endl;
+        cout << "x = ";
+        cin >> x1;
+        z1 = 1 - sin(x1);
+        cout << "z1 = " << z1 << endl;
+            cout << "Введите a, для вычисления z2 = 1 / (2 * (1 + cos(a))" << endl;
+            cout << "a = ";
+            cin >> a;
+            z2 = 1 / (2 * (1 + cos(a)));
+            cout << "z2 = " << z2 << endl;
+                cout << "Введите x и c, для вычисления z3 = sqrt(x + c)" << endl;
+                cout << "x = ";
+                cin >> x2;
+                cout << "c = ";
+                cin >> c;
+                z3 = sqrt(x2 + c);
+                cout << "z3 = " << z3 << endl;
+    return 0;
+}
