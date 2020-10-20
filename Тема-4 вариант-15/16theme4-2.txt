@@ -1,0 +1,42 @@
+//16) Определить число пассажиров, вес багажа которых превышает 30 кг;
+
+#include <cstdlib>
+#include<iostream>
+#include <string.h>
+
+using namespace std;
+
+struct passenger {//объявление структуры
+    char FIO[30];
+    int weight;
+};
+
+struct passenger suitcase[10]; /*инициализация структуры в квадратных скобочках мы передаем 
+                                 сколько будет экземпляров структуры */
+
+int main() {
+    int n;
+    int search_number;
+
+    printf("Введите количество пассажиров: ");
+    scanf("%d", &n);
+    printf("Введите пассажиров: \n");
+
+    for (int i = 0; i < n; ++i) {//циклом по очереди заполняем структуру 
+        printf("Введите ФИО%d: ", i + 1);
+        scanf("%s", &suitcase[i].FIO);
+        printf("Введите вес чемодана%d:", i + 1);
+        scanf("%d", &suitcase[i].weight);
+    }
+
+    int count = 0; //счетчик 
+    cout << endl;
+    for (int j = 0; j <= n; ++j) {//в цикле перебираем все записи структуры и проверяем условие 
+        if (suitcase[j].weight > 30) {//условие поиска 
+            count += 1;
+        }
+    }
+    cout << "Количество чемоданов, вес которых превышает 30 кг.: " << count;
+    return 0;
+}
+
