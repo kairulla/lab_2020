@@ -1,0 +1,30 @@
+#include <cstdlib>
+#include <iostream>
+#include <math.h>
+#include <stdio.h>
+#include <string>
+#include "delen.h"
+
+using namespace std;
+
+int main() {
+    double a = 0, b = 0;
+    cout << "Введите A и B" << endl << "A = ";
+    cin >> a;
+    cout << endl << "B = ";
+    cin >> b;
+    cout << endl;
+
+    unsigned int i = 1;
+    double y = 1;
+
+    while (i < 4) {
+        y *= delen(a, b, i);
+        i++;
+    }
+
+    cout << "Ответ" << endl << "Y = " << y << endl;
+
+    return 0;
+}
+
